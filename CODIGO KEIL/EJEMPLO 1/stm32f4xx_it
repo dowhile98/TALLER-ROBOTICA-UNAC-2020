@@ -1,0 +1,8 @@
+#include "stm32f4xx_hal.h"
+
+void SysTick_Handler(void){
+	//incrementar la el contador tick
+	HAL_IncTick();
+	//manejador de la interrupcion del systick
+	HAL_SYSTICK_IRQHandler();
+}
